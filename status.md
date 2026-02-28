@@ -22,7 +22,11 @@
 - [x] Wired all 5 tables into App.jsx grid
 
 ## Phase 4: Summary & Overview
-- [ ] Not started
+- [x] `useDerivedTotals.js` - Computes all category summaries and remaining
+- [x] `SummaryCard.jsx` - Individual card with actual, planned, and difference
+- [x] `SummaryBar.jsx` - 5 top summary cards in responsive grid
+- [x] `FinancialOverview.jsx` - 6-row Planned vs Actual table with differences
+- [x] Wired into App.jsx
 
 ## Phase 5: Charts
 - [ ] Not started
