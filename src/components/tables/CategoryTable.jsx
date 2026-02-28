@@ -36,12 +36,12 @@ export default function CategoryTable({
       {/* Table */}
       <table className="w-full">
         <thead>
-          <tr className="text-xs text-lavender-400 uppercase tracking-wider">
-            <th className="text-left py-2 px-3 font-medium">Item</th>
-            <th className="text-right py-2 px-3 font-medium">Planned</th>
-            <th className="text-right py-2 px-3 font-medium">Actual</th>
-            {showProgress && <th className="py-2 px-3 font-medium">Progress</th>}
-            <th className="w-8"></th>
+          <tr className="text-[10px] text-lavender-400 uppercase">
+            <th className="text-left py-1.5 px-2 font-medium">Item</th>
+            <th className="text-right py-1.5 px-2 font-medium">Planned</th>
+            <th className="text-right py-1.5 px-2 font-medium">Actual</th>
+            {showProgress && <th className="py-1.5 px-2 font-medium w-16">Progress</th>}
+            <th className="w-6"></th>
           </tr>
         </thead>
         <tbody>
@@ -70,9 +70,9 @@ export default function CategoryTable({
 
       {/* Totals Footer */}
       {items.length > 0 && (
-        <div className="bg-lavender-50/50 px-3 py-2 flex justify-between text-sm font-medium border-t border-lavender-100">
+        <div className="bg-lavender-50/50 px-2 py-1.5 flex justify-between text-xs font-medium border-t border-lavender-100">
           <span className="text-lavender-600">Total</span>
-          <div className="flex gap-6">
+          <div className="flex gap-4">
             <span>{formatCurrency(totalPlanned, settings.currency)}</span>
             <span>{formatCurrency(totalActual, settings.currency)}</span>
           </div>

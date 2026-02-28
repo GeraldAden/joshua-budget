@@ -34,7 +34,7 @@ export default function CurrencyInput({ value, onSave, className = '' }) {
       ref={inputRef}
       type="number"
       step="0.01"
-      className={`w-24 px-1 py-0.5 border border-lavender-300 rounded text-right text-sm focus:outline-none focus:ring-1 focus:ring-lavender-500 ${className}`}
+      className={`w-20 px-1 py-0.5 border border-lavender-300 rounded text-right text-xs focus:outline-none focus:ring-1 focus:ring-lavender-500 ${className}`}
       value={draft}
       onChange={(e) => setDraft(e.target.value)}
       onBlur={commit}

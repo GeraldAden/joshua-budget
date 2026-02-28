@@ -28,7 +28,7 @@ export default function LineItemRow({
   return (
     <tr className="group hover:bg-lavender-50 border-b border-lavender-100">
       {/* Label */}
-      <td className="py-2 px-3">
+      <td className="py-1.5 px-2">
         {editingLabel ? (
           <input
             ref={labelRef}
@@ -58,7 +58,7 @@ export default function LineItemRow({
       </td>
 
       {/* Planned */}
-      <td className="py-2 px-3 text-right text-sm">
+      <td className="py-1.5 px-2 text-right text-xs">
         <span className="text-lavender-400 mr-0.5">{currencySymbol}</span>
         <CurrencyInput
           value={item.planned}
@@ -67,7 +67,7 @@ export default function LineItemRow({
       </td>
 
       {/* Actual */}
-      <td className="py-2 px-3 text-right text-sm">
+      <td className="py-1.5 px-2 text-right text-xs">
         <span className="text-lavender-400 mr-0.5">{currencySymbol}</span>
         <CurrencyInput
           value={item.actual}
@@ -77,13 +77,13 @@ export default function LineItemRow({
 
       {/* Progress */}
       {showProgress && (
-        <td className="py-2 px-3 w-32">
+        <td className="py-1.5 px-2 w-16">
           <ProgressBar actual={item.actual} planned={item.planned} />
         </td>
       )}
 
       {/* Delete */}
-      <td className="py-2 px-1 w-8">
+      <td className="py-1.5 px-0.5 w-6">
         <button
           onClick={onRemove}
           className="opacity-0 group-hover:opacity-100 text-red-400 hover:text-red-600 transition-opacity p-1"
