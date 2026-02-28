@@ -1,21 +1,25 @@
 # Implementation Status
 
 ## Phase 1: Foundation
-- [ ] Project scaffold + dependencies
-- [ ] `constants.js` - Category keys, colors, defaults
-- [ ] `defaults.js` - createEmptyMonth(), defaultSettings
-- [ ] `formatCurrency.js` - Intl.NumberFormat wrapper
-- [ ] `calculations.js` - Sum helpers, progress %
-- [ ] `useLocalStorage.js` hook
-- [ ] `BudgetContext.jsx` + `useBudget.js`
+- [x] Project scaffold + dependencies
+- [x] `constants.js` - Category keys, colors, defaults
+- [x] `defaults.js` - createEmptyMonth(), defaultSettings
+- [x] `formatCurrency.js` - Intl.NumberFormat wrapper
+- [x] `calculations.js` - Sum helpers, progress %
+- [x] `useLocalStorage.js` hook
+- [x] `BudgetContext.jsx` + `useBudget.js`
 
 ## Phase 2: Layout Shell
-- [ ] `App.jsx` with BudgetProvider wrapper and grid layout
-- [ ] `Header.jsx` + `MonthPicker.jsx` (month navigation)
-- [ ] Lavender theme in `index.css`
+- [x] `App.jsx` with BudgetProvider wrapper and grid layout
+- [x] `Header.jsx` + `MonthPicker.jsx` (month navigation)
+- [x] Lavender theme in `index.css`
 
 ## Phase 3: Data Entry Tables
-- [ ] Not started
+- [x] `ProgressBar.jsx` - Color-coded progress bar
+- [x] `CurrencyInput.jsx` - Inline number editing
+- [x] `LineItemRow.jsx` - Double-click to edit, blur to save, delete button
+- [x] `CategoryTable.jsx` - Reusable table with header, rows, add button, totals footer
+- [x] Wired all 5 tables into App.jsx grid
 
 ## Phase 4: Summary & Overview
 - [ ] Not started
