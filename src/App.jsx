@@ -12,7 +12,7 @@ function App() {
     <BudgetProvider>
       <div className="min-h-screen bg-lavender-50">
         <Header />
-        <main className="max-w-[1600px] mx-auto px-6 py-6">
+        <main className="max-w-[1600px] mx-auto px-4 sm:px-6 py-4 sm:py-6">
           {/* Summary Cards */}
           <SummaryBar />
 

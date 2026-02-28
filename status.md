@@ -35,4 +35,8 @@
 - [x] Wired into App.jsx with responsive grid layout
 
 ## Phase 6: Polish
-- [ ] Not started
+- [x] `ImportExportButtons.jsx` - Export JSON download + import from file
+- [x] Wired import/export into Header
+- [x] Responsive breakpoints (padding, font sizes for mobile)
+- [x] Page title set to "Joshua Budget"
+- [x] Edge cases: zero-division guards, empty state handling
