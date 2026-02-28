@@ -2,6 +2,8 @@ import { BudgetProvider } from './context/BudgetContext'
 import Header from './components/layout/Header'
 import SummaryBar from './components/summary/SummaryBar'
 import FinancialOverview from './components/overview/FinancialOverview'
+import AmountLeftChart from './components/overview/AmountLeftChart'
+import CashFlowCharts from './components/overview/CashFlowCharts'
 import CategoryTable from './components/tables/CategoryTable'
 import { CATEGORIES } from './utils/constants'
 
@@ -14,9 +16,17 @@ function App() {
           {/* Summary Cards */}
           <SummaryBar />
 
-          {/* Financial Overview */}
+          {/* Overview + Doughnut */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+            <div className="lg:col-span-2">
+              <FinancialOverview />
+            </div>
+            <AmountLeftChart />
+          </div>
+
+          {/* Cash Flow Charts */}
           <div className="mb-6">
-            <FinancialOverview />
+            <CashFlowCharts />
           </div>
 
           {/* Category Tables */}

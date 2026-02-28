@@ -29,7 +29,10 @@
 - [x] Wired into App.jsx
 
 ## Phase 5: Charts
-- [ ] Not started
+- [x] `AmountLeftChart.jsx` - Doughnut chart with center text plugin showing remaining
+- [x] `CashFlowCharts.jsx` - Grouped bar (Planned vs Actual) + Pie (Spending Breakdown)
+- [x] Registered Chart.js components (ArcElement, BarElement, scales, etc.)
+- [x] Wired into App.jsx with responsive grid layout
 
 ## Phase 6: Polish
 - [ ] Not started
